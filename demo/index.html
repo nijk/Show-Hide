@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery demo: show/hide</title>
+<link href="" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+    <script src="../jquery.showhide.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("body").delegate(".triggerShow", "click", function(){
+            $(".showMe").showHide("show", 250, function(){
+                $(".triggerShow").text("click me to hide").toggleClass("triggerShow triggerHide");
+                $(this).effect("highlight", 500);
+            }).append("<p>Chaining test</p>");
+        });
+        $("body").delegate(".triggerHide", "click", function(){
+            $(".showMe").showHide("hide", "fast", function(){
+                $(".triggerHide").text("click me to show").toggleClass("triggerHide triggerShow");
+            });
+        });
+    });
+</script>​
+</head>
+<body>
+<p><a href="#" class="triggerShow">click me to show</a></p>
+<div id="1" class="showMe">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum est eu turpis egestas ultrices. Aliquam at nisi dictum nisi pretium elementum. Nullam ornare tellus tempor augue pretium semper. Maecenas consectetur malesuada nunc ut porta. Cras interdum arcu sit amet nisi tristique non dapibus est egestas. </p>
+</div>
+<div id="2" class="showMe">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum est eu turpis egestas ultrices. Aliquam at nisi dictum nisi pretium elementum. Nullam ornare tellus tempor augue pretium semper. Maecenas consectetur malesuada nunc ut porta. Cras interdum arcu sit amet nisi tristique non dapibus est egestas. </p>
+    <p>Sed id arcu a tortor eleifend adipiscing. Fusce metus lectus, ultrices sed egestas vitae, lacinia at tellus. Nam vitae ante nisl. Suspendisse molestie leo vel tellus congue a condimentum augue ultricies. Integer blandit laoreet ultrices. Etiam consequat cursus augue. Curabitur scelerisque elementum ultrices.
+    </p>
+</div>
+<h4>Some other content</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum est eu turpis egestas ultrices. Aliquam at nisi dictum nisi pretium elementum. Nullam ornare tellus tempor augue pretium semper. Maecenas consectetur malesuada nunc ut porta. Cras interdum arcu sit amet nisi tristique non dapibus est egestas. Nam gravida consequat eros, sed vulputate tellus ultricies in. Vivamus ac felis lorem, condimentum porttitor turpis.</p>
+</body>
+</html>
