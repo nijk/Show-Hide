@@ -1,0 +1,41 @@
+{
+    "name": "jquery.showhide",
+    "version": "1.0.0b1",
+    "title": "jQuery.showhide()",
+    "author": {
+        "name": "Nick Aspinall",
+        "url": "https://github.com/nijk"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "MIT-LICENSE.txt"
+        },
+        {
+            "type": "GPLv2",
+            "url": "GPL-LICENSE.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.4.3",
+        "jqueryui": ">=1.8"
+    },
+    "description": "A plugin allowing developers to easily create a smooth show or hide effect",
+    "keywords": [
+        "animate",
+        "show",
+        "hide",
+        "slide",
+        "effects"
+    ],
+    "homepage": "https://github.com/nijk/Show-Hide",
+    "maintainers": [
+        {
+            "name": "Nick Aspinall",
+            "url": "https://github.com/nijk"
+        }
+    ],
+    "files": [
+        "jquery.showhide.js"
+    ]
+}
