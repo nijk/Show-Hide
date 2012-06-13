@@ -17,8 +17,7 @@
         }
     ],
     "dependencies": {
-        "jquery": ">=1.4.3",
-        "jqueryui": ">=1.8"
+        "jquery": ">=1.4.3"
     },
     "description": "A plugin allowing developers to easily create a smooth show or hide effect",
     "keywords": [
@@ -36,6 +35,7 @@
         }
     ],
     "files": [
-        "jquery.showhide.js"
+        "jquery.showhide.js",
+        "jquery.showhide.min.js"
     ]
 }

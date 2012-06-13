@@ -12,15 +12,14 @@
  *
  * Dependencies:
  *
- * jquery.showhide.js is dependent on jQuery (1.7.1) and jQuery UI (1.8.16),
- * optional reliance is on jquery.smartresize.js
+ * jquery.showhide.js is dependent on jQuery (1.4.3)
  *
  * Description: A plugin allowing developers to easily create a smooth show or
  * hide effect.
  *
  * Example use:
  * $(".myDiv").showHide('show', 250, {easing:'linear'}, function(){
- *     //Any code
+ *     //Callback code
  * });
  *
  * The 'show' method call will prepare the targeted jQuery object

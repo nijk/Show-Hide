@@ -7,10 +7,10 @@ SHOW HIDE
 .showHide( method, duration, [options,] [callback] )         Returns jQuery
 
 Dependencies:
-jquery.showhide.js is dependent on jQuery (1.7.1) and jQuery UI (1.8.16)
+jquery.showhide.js is dependent on jQuery (1.4.3)
 
 Description:
-A plugin allowing developers to easily create a smooth show or hide effect.
+A plugin allowing you to easily create a smooth show or hide effect.
 
 Example use:
 $(".myDiv").showHide('show', 250, {easing:'linear'}, function(){
