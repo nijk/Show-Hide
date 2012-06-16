@@ -62,7 +62,7 @@
                     animating = false;
                 });
             });
-        };
+        }
         function hide(elem){
             animating = true;
             elem.wrap('<div class="show-hide"/>');
@@ -73,7 +73,7 @@
                         animating = false;
                 });
             });
-        };
+        }
 
         if(!animating){
             // loop through each element returned by jQuery selector
